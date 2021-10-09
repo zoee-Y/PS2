@@ -12,7 +12,7 @@ const navigator = createStackNavigator({
 }, {
    initialRouteName: 'Home',
    defaultNavigationOptions: {
-    title: 'goSeeQ!'
+    title: 'KD Internal Delivery Network App'
    }
 
 });
