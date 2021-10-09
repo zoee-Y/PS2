@@ -9,6 +9,7 @@ import CargoDeliveryRequest from './src/screens/Operator/CargoDeliveryRequest'
 const navigator = createStackNavigator({
   //add screens here
   Home: HomeScreen,
+  OpDel: OpDeliveries,
 }, {
    initialRouteName: 'Home',
    defaultNavigationOptions: {
