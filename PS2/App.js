@@ -1,23 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
+// import screens here
+import HomeScreen from "./src/screens/HomeScreen";
+import OpDeliveries from "./src/screens/Operator/OpDeliveries";
+import CargoDeliveryRequest from './src/screens/Operator/CargoDeliveryRequest'
 
-export default function App() {
-  const [outputText, setOutputText] = useState('Open up App.js to start working on your app!');
-  return (
-    <View style={styles.container}>
-      <Text>{outputText</Text>
-      <Button title="Change Text" onPress={() => setOutputText('The text changed!')}/>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+const navigator = createStackNavigator({
+  //add screens here
+  Home: HomeScreen,
+}, {
+   initialRouteName: 'Home',
+   defaultNavigationOptions: {
+    title: 'goSeeQ!'
+   }
+
 });
+
+export default createAppContainer(navigator);
