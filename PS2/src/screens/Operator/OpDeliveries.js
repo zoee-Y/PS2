@@ -6,6 +6,7 @@ import {
   Button
 } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
+import { firebase } from '../../firebase/config'
 
 const OpDeliveries = ({ navigation }) => {
 
