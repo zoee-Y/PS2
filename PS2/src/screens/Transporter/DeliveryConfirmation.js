@@ -4,11 +4,11 @@ import Constants from 'expo-constants';
 import { Button } from 'react-native-elements';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 
-export default function App() {
+function App() {
   return (
     <View style={styles.container1}>
       <Text style={styles.paragraphtitle}>
-        Cargo Collection Confirmation
+        Delivery Confirmation
       </Text>
 
       <ScrollView style={styles.scrollView}>
