@@ -4,7 +4,7 @@ import Constants from 'expo-constants';
 import { Button } from 'react-native-elements';
 
 
-function Loginpage() {
+const TrLogin = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
@@ -112,3 +112,5 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
   }, 
 });
+
+export default TrLogin;

@@ -12,7 +12,7 @@ const OpDeliveries = ({ navigation }) => {
 
     return (
         <ScrollView>
-            <Text>Test</Text>
+            <Text>OpDeliveries Test</Text>
         </ScrollView>
     )
 

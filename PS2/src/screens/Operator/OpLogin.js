@@ -4,7 +4,7 @@ import Constants from 'expo-constants';
 import { Button } from 'react-native-elements';
 
 
-function Loginpage() {
+const OpLogin = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
@@ -33,7 +33,7 @@ function Loginpage() {
         </View>
       
       </View>
-      <TouchableOpacity onPress={() => navigation.navigate("OpDeliveries")} style={styles.Loginbutton}>
+      <TouchableOpacity onPress={() => navigation.navigate("OpDel")} style={styles.Loginbutton}>
         <Text style={styles.LoginbuttonText}>Login</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => alert('Redirecting')}>
@@ -42,6 +42,7 @@ function Loginpage() {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -112,3 +113,5 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
   }, 
 });
+
+export default OpLogin;

@@ -35,6 +35,7 @@ const HomeScreen = ({ navigation }) => {
       </TouchableOpacity>
     </View>
   );
+}
 
 
 const styles = StyleSheet.create({
@@ -93,5 +94,4 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   }, 
 });
-}
 export default HomeScreen;
