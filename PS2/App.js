@@ -7,7 +7,10 @@ import TrLogin from './src/screens/Transporter/TrLogin';
 import OpDeliveries from "./src/screens/Operator/OpDeliveries";
 import OpDeliveryRequest from "./src/screens/Operator/CargoDeliveryRequest";
 import TrDeliveries from "./src/screens/Transporter/TrDeliveries";
+import DCon from "./src/screens/Transporter/DeliveryConfirmation";
+
 import CargoDeliveryRequest from './src/screens/Operator/CargoDeliveryRequest';
+import Route from "./src/screens/Transporter/Route";
 
 const navigator = createStackNavigator({
   //add screens here
@@ -15,6 +18,8 @@ const navigator = createStackNavigator({
   OpDel: OpDeliveries,
   OpDelRequest: OpDeliveryRequest,
   TrDeliveries: TrDeliveries,
+  OpRoute:Route,
+  DCon: DCon,
   OpLogin: OpLogin,
   TrLogin: TrLogin,
 }, {

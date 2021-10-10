@@ -4,7 +4,7 @@ import Constants from 'expo-constants';
 import { Button } from 'react-native-elements';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 
-function App() {
+const DCon = ({ navigation }) => {
   return (
     <View style={styles.container1}>
       <Text style={styles.paragraphtitle}>
@@ -313,3 +313,5 @@ const styles = StyleSheet.create({
   }, 
 
 });
+
+export default DCon;

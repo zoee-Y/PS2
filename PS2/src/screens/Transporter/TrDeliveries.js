@@ -16,27 +16,30 @@ import {
 import { ScrollView } from "react-native-gesture-handler";
 import { firebase } from '../../firebase/config'
 import { withOrientation } from 'react-navigation';
+import { color } from 'react-native-elements/dist/helpers';
 
 
-const DemoContent = ({ Node }) => {
-
-
-
+const TrRequest = ({ navigation }) => {
     return (
+        <View>
+             <TouchableOpacity style={styles.mapButton} onPress={() => navigation.navigate("OpRoute")} >
+            <Text style={styles.mapButtonText}>🏞 Map</Text>
+        </TouchableOpacity>
+       
+        
         <View style={styles.containerIn}>
-    
             <TouchableOpacity style={styles.containers} onPress={() => {
-                //navigation.navigate("") //navigate to filled form, somehow pass text content to form
+                navigation.navigate("DCon") //navigate to filled form, somehow pass text content to form
             }}>
                 <View style={{ flexDirection: "row", alignSelf: "center" }}>
-                    <View style={{ flexDirection: "column", width: "165px" }}>
+                    <View style={{ flexDirection: "column", width: 165, color:'white' }}>
                         <Text>ID: 29847</Text>
                         <Text>Blk 513 #02-110 DEFG Warehouse</Text>
 
 
                         <Text>Blk 515 #01-120 Tenant: ABCD</Text>
                     </View>
-                    <View style={{ flexDirection: "column", textAlign: "left", width: "165px", color: 'white' }}>
+                    <View style={{ flexDirection: "column", textAlign: "left", width: 165, color: 'white' }}>
                         <Text>Description</Text>
 
                         <Text>Weight</Text>
@@ -46,37 +49,29 @@ const DemoContent = ({ Node }) => {
                 </View>
             </TouchableOpacity>
         </View>
-        
+        </View>
 
     );
 };
 
-const TrRequest = ({ Node }) => {
-    return (
-        <SafeAreaView>
-            <ScrollView
-                contentInsetAdjustmentBehavior="automatic">
-                <DemoContent />
-            </ScrollView>
-        </SafeAreaView>
-    );
-};
+
 
 
 /*openMap(yosemite)*/
 const styles = StyleSheet.create({
     containers: {
-        paddingTop: "5px",
-        paddingBottom: "5px",
-        margin: "5px",
+        paddingTop: 5,
+        paddingBottom: 5,
+        margin: 5,
     },
 
     containerIn: {
         backgroundColor: "#AE3131",
-        borderRadius: "10px",
+        borderRadius: 10,
         alignSelf: "center",
-        margin: "5px",
-        width: "350px",
+        margin: 5,
+        width: 350,
+        color:'white'
     },
     info: {
         color: 'white'
@@ -113,7 +108,7 @@ const styles = StyleSheet.create({
 
     mapButton: {
         borderRadius: 20,
-        backgroundColor: 'white',
+        backgroundColor: "#AE3131",
         padding: 15,
         paddingLeft: 20,
         paddingRight: 20,
@@ -122,7 +117,8 @@ const styles = StyleSheet.create({
         borderBottomColor: '#e4e4e4'
     },
     mapButtonText: {
-        fontWeight: '500'
+        fontWeight: '500',
+        color: 'white'
     },
     emojis: {
         fontSize: 35,

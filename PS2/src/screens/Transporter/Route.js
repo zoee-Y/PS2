@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {Node} from 'react';
 import openMap from 'react-native-open-maps';
 import { createOpenLink } from 'react-native-open-maps';
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
       width: '100%',
       flex: 1,
       paddingBottom: 0,
-      backgroundColor: '#151515'
+      backgroundColor: "#AE3131"
     },
     headerTitle: {
       fontSize: 38,
