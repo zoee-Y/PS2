@@ -16,11 +16,11 @@ const OpDeliveryRequest = ({ navigation }) => {
     return (
         <ScrollView>
             <View style={styles.inputView}>
-                <Text>Operator: </Text><TextInput style= {{width:"250px"}} defaultValue="Company A" value={value} onChangeText={text => onChangeText(text)}></TextInput>
+                <Text>Operator: </Text><TextInput style= {{width:250}} defaultValue="Company A" value={value} onChangeText={text => onChangeText(text)}></TextInput>
             </View>
             <View>
                 <View style={styles.inputView}>
-                    <Text>Blk: </Text><TextInput style= {{width:"250px"}} defaultValue="513" value={value} onChangeText={text => onChangeText(text)}></TextInput>
+                    <Text>Blk: </Text><TextInput style= {{width:250}} defaultValue="513" value={value} onChangeText={text => onChangeText(text)}></TextInput>
                 </View>
             </View>
         </ScrollView>
@@ -31,11 +31,11 @@ const OpDeliveryRequest = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     inputView: {
-        padding:"3px",
+        padding:3,
         flexDirection:"row",
         alignSelf:"center",
         borderBottomColor:"#AE3131",
-        borderBottomWidth:"1px"
+        borderBottomWidth:1
     }
   });
 

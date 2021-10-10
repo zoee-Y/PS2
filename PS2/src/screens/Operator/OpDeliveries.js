@@ -38,7 +38,7 @@ const OpDeliveries = ({ navigation }) => {
                         //navigation.navigate("") //navigate to filled form, somehow pass text content to form
                     }}>
                         <View style={{flexDirection:"row", alignSelf:"center"}}>
-                            <View style={{flexDirection:"column", width: "165px"}}>
+                            <View style={{flexDirection:"column", width: 165}}>
                                 <Text>ID: 29847</Text>
                                 <Text>Milk powder</Text>
                                 <View style={{flexDirection:"row"}}>
@@ -47,7 +47,7 @@ const OpDeliveries = ({ navigation }) => {
                                 </View>
                                 <Text>Blk 513 #01-224</Text>
                             </View>
-                            <View style={{flexDirection:"column", textAlign: "right", width: "165px"}}>
+                            <View style={{flexDirection:"column", textAlign: "right", width: 165}}>
                                 <Text>Date: 9/10/2021</Text>
                                 <Text>Time: 4.30pm</Text>
                                 <Text>Driver: Tan (273545X)</Text>
@@ -63,13 +63,13 @@ const OpDeliveries = ({ navigation }) => {
                         //navigation.navigate("") //navigate to filled form, somehow pass text content to form
                     }}>
                         <View style={{flexDirection: "row", alignSelf:"center"}}>
-                            <View style={{flexDirection: "column", width: "165px"}}>
+                            <View style={{flexDirection: "column", width: 165}}>
                                 <Text>ID: 29847</Text>
                                 <Text>Car parts</Text>
                                 <Text>150 parts</Text>
                                 <Text>Blk 513 #01-224</Text>
                             </View>
-                            <View style={{flexDirection: "column", textAlign: "right", width: "165px"}}>
+                            <View style={{flexDirection: "column", textAlign: "right", width: 165}}>
                                 <Text>Date: 9/10/2021</Text>
                                 <Text>Time: 4.00pm</Text>
                                 <Text>Driver: Michael (YN3475K)</Text>
@@ -92,13 +92,13 @@ const OpDeliveries = ({ navigation }) => {
                             //navigation.navigate("") //navigate to filled form, somehow pass text content to form
                     }}>
                         <View style={{flexDirection: "row", alignSelf:"center"}}>
-                            <View style={{flexDirection: "column", width: "165px"}}>
+                            <View style={{flexDirection: "column", width: 165}}>
                                 <Text>ID: 32857</Text>
                                 <Text>Chili sauce</Text>
                                 <Text>120 bottles</Text>
                                 <Text>Blk 513 #01-224</Text>
                             </View>
-                            <View style={{flexDirection: "column",textAlign: "right", width: "165px"}}>
+                            <View style={{flexDirection: "column",textAlign: "right", width: 165}}>
                                 <Text>Date: 8/10/2021</Text>
                                 <Text>Time: 1.30pm</Text>  
                                 <Text>Driver: Tan (273545X)</Text>
@@ -113,13 +113,13 @@ const OpDeliveries = ({ navigation }) => {
                         //navigation.navigate("") //navigate to filled form, somehow pass text content to form
                     }}>
                     <View style={{flexDirection: "row", alignSelf:"center"}}>
-                        <View style={{flexDirection: "column", width: "165px"}}>
+                        <View style={{flexDirection: "column", width: 165}}>
                             <Text>ID: 29847</Text>
                             <Text>Electronic components</Text>
                             <Text>200 pc</Text>
                             <Text>Blk 513 #01-224</Text>
                         </View>
-                        <View style={{flexDirection: "column", textAlign: "right", width: "165px"}}>
+                        <View style={{flexDirection: "column", textAlign: "right", width: 165}}>
                             <Text>Date: 8/10/2021</Text>
                             <Text>Time: 2pm</Text>
                             <Text>Driver: Josh (YN2394Q)</Text>
@@ -130,8 +130,8 @@ const OpDeliveries = ({ navigation }) => {
             </ScrollView>
             </View>
             <View>
-                <View style={{backgroundColor: "white", padding: "10px"}}>
-                    <View style={{backgroundColor: "#5376F2", borderRadius: "3px", padding:"10px", flexWrap:"wrap",}}>
+                <View style={{backgroundColor: "white", padding: 10}}>
+                    <View style={{backgroundColor: "#5376F2", borderRadius: 3, padding:10, flexWrap:"wrap",}}>
                         <TouchableOpacity style={{textAlign: "center"}} onPress={() => {
                             navigation.navigate("OpDelRequest"); //navigate to filled form, somehow pass text content to form
                         }}>
@@ -150,39 +150,39 @@ const styles = StyleSheet.create({
         fontWeight: "bold"
     },
     containers: {
-        paddingTop: "5px",
-        paddingBottom: "5px",
-        margin: "5px",
+        paddingTop: 5,
+        paddingBottom: 5,
+        margin: 5,
     },
 
     containerIn: {
         backgroundColor: "#AE3131",
-        borderRadius: "10px",
+        borderRadius: 5,
         alignSelf: "center",
-        margin: "5px",
-        width: "350px",
+        margin: 5,
+        width: 350,
     },
     containerOut: {
         backgroundColor: "#2B459F",
-        borderRadius: "10px",
+        borderRadius: 10,
         alignSelf: "center",
-        margin: "5px",
-        width: "350px",
+        margin: 5,
+        width: 350,
     },
 
     containerDIn: {
         backgroundColor: "#C77F7F",
-        borderRadius: "10px",
+        borderRadius: 10,
         alignSelf: "center",
-        margin: "5px",
-        width: "350px",
+        margin: 5,
+        width: 350,
     },
     containerDOut: {
         backgroundColor: "#7585BF",
-        borderRadius: "10px",
+        borderRadius: 10,
         alignSelf: "center",
-        margin: "5px",
-        width: "350px",
+        margin: 5,
+        width: 350,
     }
   });
 
