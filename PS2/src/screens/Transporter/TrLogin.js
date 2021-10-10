@@ -4,14 +4,11 @@ import Constants from 'expo-constants';
 import { Button } from 'react-native-elements';
 
 
-const HomeScreen = ({ navigation }) => {
-
-
-
+const TrLogin = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
-        Welcome to
+        Login Page
       </Text>
       <View>
         <Image 
@@ -19,24 +16,32 @@ const HomeScreen = ({ navigation }) => {
         source={{ uri:"https://cdn-icons-png.flaticon.com/512/237/237178.png"}}
         />
       </View>
-
-      <Text style={styles.paragraphheading}>
-        Keppel Distripark
-      </Text>
-      <Text style={styles.paragraphheading}>
-        Central Delivery System
-      </Text>
+      <View style={{flexDirection:"row"}}>
+        <Text style={styles.paragraphheading}>
+          Driver ID: 
+        </Text>
+        <View style={styles.container}>
+          <TextInput style={styles.input}/>
+        </View>
+      </View>
+      <View style={{flexDirection:"row"}}>
+        <Text style={styles.paragraphheading}>
+          Password: 
+        </Text>
+        <View style={styles.container}>
+          <TextInput style={styles.input}/>
+        </View>
       
-      <TouchableOpacity onPress={() => navigation.navigate("OpLogin")} style={styles.Loginbutton}>
-        <Text style={styles.LoginbuttonText}>Operator Login</Text>
+      </View>
+      <TouchableOpacity onPress={() => navigation.navigate("TrDeliveries")} style={styles.Loginbutton}>
+        <Text style={styles.LoginbuttonText}>Login</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate("TrLogin")} style={styles.Loginbutton}>
-        <Text style={styles.LoginbuttonText}> Driver Login</Text>
+      <TouchableOpacity onPress={() => alert('Redirecting')}>
+        <Text style={styles.FPbuttonText}>Forgot password?</Text>
       </TouchableOpacity>
     </View>
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {
@@ -67,25 +72,32 @@ const styles = StyleSheet.create({
 
   paragraphheading: {
     //margin: 0,
-    //marginTop: 0,
-    //marginBottom: 17,
-    //marginLeft: 5,
-    //marginRight: 0,
-    fontSize: 20,
+    marginTop: 0,
+    marginBottom: 17,
+    marginLeft: 5,
+    marginRight: 0,
+    fontSize: 18,
     fontWeight: '600',
-    textAlign: 'center',
-    color: '#131D42',
+    textAlign: 'left',
   },
-  
+  input: {
+    borderColor: "#131D42",
+    backgroundColor:'white',
+    flex: 1,
+    //width: "100%",
+    borderWidth:0.9,
+    borderRadius: 5,
+    padding: 0,
+  },
   Loginbutton: {
     borderWidth:1,
     // alignItems:'left',
     // justifyContent:'left',
-    padding: 15,
+    padding: 5,
     backgroundColor:'#131D42',
     borderRadius: 5,
-    marginTop: 25,
-    marginBottom: 5,
+    marginTop: 20,
+    marginBottom: 10,
     marginHorizontal: 5,
   },
   LoginbuttonText: {
@@ -93,5 +105,12 @@ const styles = StyleSheet.create({
     color: '#f1f1f1',
     textAlign: 'center'
   }, 
+  FPbuttonText: {
+    fontSize: 12,
+    color: 'red',
+    textAlign: 'center',
+    textDecorationLine: 'underline',
+  }, 
 });
-export default HomeScreen;
+
+export default TrLogin;
